@@ -79,4 +79,13 @@ public class Bank : MonoBehaviour
             }
         }
     }
+
+    public void HigherPriceByHalf()
+    {
+        ObjectPrice = ObjectPrice + ObjectPrice / 2;
+        if (ObjectPrice > MaxPrice)
+        {
+            ObjectPrice = MaxPrice;
+        }
+    }
 }
