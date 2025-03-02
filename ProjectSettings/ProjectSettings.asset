@@ -817,7 +817,8 @@ PlayerSettings:
   webGLWebAssemblyBigInt: 0
   webGLCloseOnQuit: 0
   webWasm2023: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    WebGL: PLUGIN_YG_2;TMP_YG2
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
