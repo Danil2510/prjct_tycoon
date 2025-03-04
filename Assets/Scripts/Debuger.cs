@@ -27,18 +27,6 @@ public class Debuger : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            Cursor.visible = !lick;
-            if (lick)
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-            }
-            else 
-            {
-                Cursor.lockState = CursorLockMode.None;
-            }
-            lick = !lick;
-            look.GetComponent<FirstPersonLook>().enabled = !lick;
-            g.SetActive(lick);
         }
     }
 }
