@@ -13,7 +13,7 @@ public class Debuger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            storage[0].EarnSmt(5000);
+            storage[0].EarnSmt(50000);
         }
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
