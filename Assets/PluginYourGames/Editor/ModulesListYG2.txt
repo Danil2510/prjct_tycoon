@@ -1,2 +1,5 @@
 InterstitialAdv v1.001
+Payments v1.01
 RewardedAdv v1.001
+StickyAdv v1.0
+Storage v1.01

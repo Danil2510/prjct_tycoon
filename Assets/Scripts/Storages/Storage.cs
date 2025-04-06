@@ -1,4 +1,6 @@
 using System;
+using DefaultNamespace.Analytics;
+using Unity.Services.Analytics;
 using UnityEngine;
 
 public abstract class Storage : MonoBehaviour
@@ -8,7 +10,7 @@ public abstract class Storage : MonoBehaviour
     public Action<int> ValueAdded;
     public Action<int> ValueSpended;
 
-    public void EarnSmt(int val)
+    public virtual void EarnSmt(int val)
     {
         Smthng += val;
         ValueAdded?.Invoke(val);

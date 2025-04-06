@@ -79,6 +79,9 @@ public class ConveyorController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        if (_spawnposes == null)
+            return;
+        
         Gizmos.color = Color.yellow;
         foreach (var pose in _spawnposes)
         {

@@ -7,6 +7,7 @@ namespace YG.Example
     {
         public Text timerText;
 
+#if UNITY_EDITOR
         private void Update()
         {
 #if RU_YG2
@@ -16,5 +17,6 @@ namespace YG.Example
 #endif
             timerText.text = translate + YG2.timerInterAdv.ToString("00.0");
         }
+#endif
     }
 }

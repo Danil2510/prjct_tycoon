@@ -17,8 +17,29 @@ public class Bank : MonoBehaviour
     [SerializeField] int AddMin;
     [SerializeField] int AddMax;
 
+    private float _maxPriceTimer;
+    private bool _maxPriceAd;
+
+    private const float MaxPriceTime = 20f;
+
+    public void SetMaxPrice()
+        => _maxPriceAd = true;
+    
     private void Update()
     {
+        if (_maxPriceAd)
+        {
+            ObjectPrice = MaxPrice;
+            _maxPriceTimer += Time.deltaTime;
+            if (_maxPriceTimer >= MaxPriceTime)
+            {
+                _maxPriceTimer = 0f;
+                _maxPriceAd = false;
+            }
+
+            return;
+        }
+        
         if (timeBefChange > 0)
         {
             timeBefChange -= Time.deltaTime;

@@ -790,14 +790,14 @@ PlayerSettings:
   blurSplashScreenBackground: 1
   spritePackerPolicy: 
   webGLMemorySize: 32
-  webGLExceptionSupport: 1
+  webGLExceptionSupport: 2
   webGLNameFilesAsHashes: 0
   webGLShowDiagnostics: 0
   webGLDataCaching: 1
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: APPLICATION:Default
+  webGLTemplate: PROJECT:YandexGames
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 0
@@ -818,6 +818,7 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   scriptingDefineSymbols:
+    Standalone: PLUGIN_YG_2;InterstitialAdv_yg;RewardedAdv_yg;TMP_YG2;YandexGamesPlatform_yg;NJSON_YG2;UNITY_ANALYTICS_EVENT_LOGS;Payments_yg;Storage_yg;StickyAdv_yg
     WebGL: PLUGIN_YG_2;TMP_YG2;InterstitialAdv_yg;RewardedAdv_yg
   additionalCompilerArguments: {}
   platformArchitecture: {}
@@ -836,6 +837,7 @@ PlayerSettings:
     PS5: 1
     QNX: 1
     ReservedCFE: 1
+    Standalone: 4
     VisionOS: 1
     WebGL: 1
     Windows Store Apps: 1
@@ -932,11 +934,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 9c4a3e21-6580-4692-9780-019cb71c0424
+  cloudProjectId: 37949fb0-3494-48c6-9550-b8d7b1b88057
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Tycoon
-  organizationId: danilnunity
+  projectName: WastesTycoon
+  organizationId: laternamed
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
