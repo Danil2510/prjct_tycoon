@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using DefaultNamespace.Analytics;
 using Unity.Services.Analytics;
 using UnityEngine;

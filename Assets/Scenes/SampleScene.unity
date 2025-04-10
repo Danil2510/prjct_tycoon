@@ -42720,7 +42720,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 42.950485, y: 1.8455257}
+  m_AnchoredPosition: {x: 42.671, y: 1.8455257}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &199906792
@@ -43011,7 +43011,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 0}
   AudioPlay: 0
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -43039,6 +43038,8 @@ MonoBehaviour:
     - {fileID: 949741756}
     ToDisable:
     - {fileID: 1577575542}
+  _flatKey: 2_room_1_0
+  storage: {fileID: 1323190014}
 --- !u!1 &200994587
 GameObject:
   m_ObjectHideFlags: 0
@@ -48753,7 +48754,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -48777,6 +48777,8 @@ MonoBehaviour:
     - {fileID: 570781754}
     ToDisable:
     - {fileID: 770407600}
+  _flatKey: 3_room_2_2
+  storage: {fileID: 1323190014}
 --- !u!1 &238913812
 GameObject:
   m_ObjectHideFlags: 0
@@ -72363,7 +72365,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 0}
   AudioPlay: 0
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -72400,6 +72401,8 @@ MonoBehaviour:
     - {fileID: 494666006}
     ToDisable:
     - {fileID: 205814636}
+  _flatKey: 
+  storage: {fileID: 1323190014}
 --- !u!1 &328322521
 GameObject:
   m_ObjectHideFlags: 0
@@ -75629,7 +75632,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -75647,6 +75649,8 @@ MonoBehaviour:
     - {fileID: 5145229381712882389}
     ToDisable:
     - {fileID: 5593894}
+  _flatKey: room_1_2
+  storage: {fileID: 1323190014}
 --- !u!1 &349874158
 GameObject:
   m_ObjectHideFlags: 0
@@ -84368,7 +84372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -6.012, y: -17.089}
+  m_AnchoredPosition: {x: -6.253, y: -17.089}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &406875522
@@ -85969,7 +85973,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 0}
   AudioPlay: 0
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -86005,6 +86008,8 @@ MonoBehaviour:
     - {fileID: 1512856375}
     ToDisable:
     - {fileID: 1110986749}
+  _flatKey: 
+  storage: {fileID: 1323190014}
 --- !u!1001 &415890562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105495,7 +105500,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -105513,6 +105517,8 @@ MonoBehaviour:
     - {fileID: 689374230}
     ToDisable:
     - {fileID: 401936667}
+  _flatKey: 2_room_2_2
+  storage: {fileID: 1323190014}
 --- !u!4 &526334866
 Transform:
   m_ObjectHideFlags: 0
@@ -106180,7 +106186,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -106204,6 +106209,8 @@ MonoBehaviour:
     - {fileID: 1681577389}
     ToDisable:
     - {fileID: 1373190042}
+  _flatKey: 2_room_2_1
+  storage: {fileID: 1323190014}
 --- !u!4 &531792397
 Transform:
   m_ObjectHideFlags: 0
@@ -112041,7 +112048,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -112059,6 +112065,8 @@ MonoBehaviour:
     - {fileID: 1053955650}
     ToDisable:
     - {fileID: 1834469426}
+  _flatKey: 3_room_1_1
+  storage: {fileID: 1323190014}
 --- !u!4 &536331059
 Transform:
   m_ObjectHideFlags: 0
@@ -120556,7 +120564,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -120574,6 +120581,8 @@ MonoBehaviour:
     - {fileID: 1481615949}
     ToDisable:
     - {fileID: 851584185}
+  _flatKey: 3_room_3_1
+  storage: {fileID: 1323190014}
 --- !u!1 &562184817
 GameObject:
   m_ObjectHideFlags: 0
@@ -130414,7 +130423,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 0}
   AudioPlay: 0
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -130449,6 +130457,8 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 1807510997}
     - {fileID: 1147129348}
+  _flatKey: 3_room_1_0
+  storage: {fileID: 1323190014}
 --- !u!4 &622403680
 Transform:
   m_ObjectHideFlags: 0
@@ -136355,7 +136365,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -136373,6 +136382,8 @@ MonoBehaviour:
     - {fileID: 2082621154}
     ToDisable:
     - {fileID: 667985382}
+  _flatKey: 2_room_3_2
+  storage: {fileID: 1323190014}
 --- !u!4 &657916365
 Transform:
   m_ObjectHideFlags: 0
@@ -150249,10 +150260,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2151011045969945401, guid: 844a192f1fd32eb4faefd9b466d4929b, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1273614334}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2812759442104274355, guid: 844a192f1fd32eb4faefd9b466d4929b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 844a192f1fd32eb4faefd9b466d4929b, type: 3}
 --- !u!4 &710400669 stripped
 Transform:
@@ -161348,7 +161356,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 0}
   AudioPlay: 0
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -161383,6 +161390,8 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 554147368}
     - {fileID: 1147129348}
+  _flatKey: room_2_0
+  storage: {fileID: 1323190014}
 --- !u!4 &747423895
 Transform:
   m_ObjectHideFlags: 0
@@ -163705,7 +163714,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -163729,6 +163737,8 @@ MonoBehaviour:
     - {fileID: 1378120632}
     ToDisable:
     - {fileID: 856850233}
+  _flatKey: room_1_1
+  storage: {fileID: 1323190014}
 --- !u!1 &759914504
 GameObject:
   m_ObjectHideFlags: 0
@@ -172067,7 +172077,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 0}
   AudioPlay: 0
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -172095,6 +172104,8 @@ MonoBehaviour:
     - {fileID: 1713724098}
     ToDisable:
     - {fileID: 7500893869467578927}
+  _flatKey: room_1_0
+  storage: {fileID: 1323190014}
 --- !u!1 &783151083
 GameObject:
   m_ObjectHideFlags: 0
@@ -175042,7 +175053,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -175060,6 +175070,8 @@ MonoBehaviour:
     - {fileID: 908501862}
     ToDisable:
     - {fileID: 564122341}
+  _flatKey: room_3_2
+  storage: {fileID: 1323190014}
 --- !u!1001 &799943164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -176318,7 +176330,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 0}
   AudioPlay: 0
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -176338,6 +176349,8 @@ MonoBehaviour:
     - {fileID: 799637489}
     ToDisable:
     - {fileID: 773578355}
+  _flatKey: room_3_0
+  storage: {fileID: 1323190014}
 --- !u!4 &806563670
 Transform:
   m_ObjectHideFlags: 0
@@ -182076,7 +182089,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -182100,6 +182112,8 @@ MonoBehaviour:
     - {fileID: 1899715711}
     ToDisable:
     - {fileID: 191699489}
+  _flatKey: room_3_1
+  storage: {fileID: 1323190014}
 --- !u!1 &836651060
 GameObject:
   m_ObjectHideFlags: 0
@@ -193890,7 +193904,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 0
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -193903,6 +193916,8 @@ MonoBehaviour:
     - {fileID: 924417066}
     ToDisable:
     - {fileID: 899108398}
+  _flatKey: 
+  storage: {fileID: 1323190014}
 --- !u!4 &903720920
 Transform:
   m_ObjectHideFlags: 0
@@ -208409,7 +208424,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -208427,6 +208441,8 @@ MonoBehaviour:
     - {fileID: 1764158960}
     ToDisable:
     - {fileID: 1421939228}
+  _flatKey: room_2_1
+  storage: {fileID: 1323190014}
 --- !u!1 &968335192
 GameObject:
   m_ObjectHideFlags: 0
@@ -212812,7 +212828,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 0}
   AudioPlay: 0
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -212841,6 +212856,8 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 233981143}
     - {fileID: 1147129348}
+  _flatKey: 3_room_2_0
+  storage: {fileID: 1323190014}
 --- !u!1 &991177025
 GameObject:
   m_ObjectHideFlags: 0
@@ -229412,7 +229429,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 0}
   AudioPlay: 0
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -229432,6 +229448,8 @@ MonoBehaviour:
     - {fileID: 1733624367}
     ToDisable:
     - {fileID: 297112659}
+  _flatKey: 3_room_3_0
+  storage: {fileID: 1323190014}
 --- !u!1 &1069962537
 GameObject:
   m_ObjectHideFlags: 0
@@ -230648,7 +230666,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -230672,6 +230689,8 @@ MonoBehaviour:
     - {fileID: 1241691532}
     ToDisable:
     - {fileID: 1309029833}
+  _flatKey: 3_room_1_2
+  storage: {fileID: 1323190014}
 --- !u!4 &1079709033
 Transform:
   m_ObjectHideFlags: 0
@@ -252627,10 +252646,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2812759442104274355, guid: 844a192f1fd32eb4faefd9b466d4929b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 844a192f1fd32eb4faefd9b466d4929b, type: 3}
 --- !u!4 &1182303808 stripped
 Transform:
@@ -253947,7 +253963,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -253965,6 +253980,8 @@ MonoBehaviour:
     - {fileID: 2067555474}
     ToDisable:
     - {fileID: 344847121}
+  _flatKey: 2_room_1_2
+  storage: {fileID: 1323190014}
 --- !u!4 &1189887093
 Transform:
   m_ObjectHideFlags: 0
@@ -275796,6 +275813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Smthng: 0
+  _flatKey: money_industrial_storage
 --- !u!1 &1323209324
 GameObject:
   m_ObjectHideFlags: 0
@@ -296092,7 +296110,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -296116,6 +296133,8 @@ MonoBehaviour:
     - {fileID: 1182848386}
     ToDisable:
     - {fileID: 1363984647}
+  _flatKey: 2_room_1_1
+  storage: {fileID: 1323190014}
 --- !u!4 &1385400491
 Transform:
   m_ObjectHideFlags: 0
@@ -303819,7 +303838,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -303843,6 +303861,8 @@ MonoBehaviour:
     - {fileID: 1677711612}
     ToDisable:
     - {fileID: 809128648}
+  _flatKey: 2_room_3_1
+  storage: {fileID: 1323190014}
 --- !u!4 &1407548087
 Transform:
   m_ObjectHideFlags: 0
@@ -327106,7 +327126,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 0}
   AudioPlay: 0
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -327134,6 +327153,8 @@ MonoBehaviour:
     - {fileID: 65508498}
     ToDisable:
     - {fileID: 751778629}
+  _flatKey: 2_room_2_0
+  storage: {fileID: 1323190014}
 --- !u!1 &1535628228
 GameObject:
   m_ObjectHideFlags: 0
@@ -356848,7 +356869,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -356866,6 +356886,8 @@ MonoBehaviour:
     - {fileID: 2065121704}
     ToDisable:
     - {fileID: 494404357}
+  _flatKey: 3_room_2_1
+  storage: {fileID: 1323190014}
 --- !u!1001 &1694926079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -364132,7 +364154,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -364156,6 +364177,8 @@ MonoBehaviour:
     - {fileID: 1848288674}
     ToDisable:
     - {fileID: 672093392}
+  _flatKey: 3_room_3_2
+  storage: {fileID: 1323190014}
 --- !u!1001 &1734128468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -366022,7 +366045,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 17.240494, y: 1.8455257}
+  m_AnchoredPosition: {x: 16.92, y: 1.8455257}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1742661194
@@ -368027,7 +368050,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 0}
   AudioPlay: 0
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -368064,6 +368086,8 @@ MonoBehaviour:
     - {fileID: 953140860}
     ToDisable:
     - {fileID: 1454517792}
+  _flatKey: 
+  storage: {fileID: 1323190014}
 --- !u!1 &1755704553
 GameObject:
   m_ObjectHideFlags: 0
@@ -372050,7 +372074,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 0}
   AudioPlay: 0
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -372070,6 +372093,8 @@ MonoBehaviour:
     - {fileID: 657916363}
     ToDisable:
     - {fileID: 1086848816}
+  _flatKey: 2_room_3_0
+  storage: {fileID: 1323190014}
 --- !u!1 &1780712446
 GameObject:
   m_ObjectHideFlags: 0
@@ -418960,7 +418985,6 @@ MonoBehaviour:
   m_AudioSource: {fileID: 923976653}
   AudioPlay: 1
   levelOfUpgrade: 0
-  storage: {fileID: 1323190014}
   set_upgrades:
   - cost: 0
     ToActive:
@@ -418984,6 +419008,8 @@ MonoBehaviour:
     - {fileID: 494941255}
     ToDisable:
     - {fileID: 478027955}
+  _flatKey: room_2_2
+  storage: {fileID: 1323190014}
 --- !u!1 &2014216552
 GameObject:
   m_ObjectHideFlags: 0

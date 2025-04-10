@@ -1,8 +1,49 @@
+using System;
 using DefaultNamespace.Analytics;
+using DefaultNamespace.SaveLoadSystem;
 using Unity.Services.Analytics;
+using UnityEngine;
 
-public class MoneyStorage : Storage
+[Serializable]
+public class MoneyData
 {
+    public int Money;
+}
+
+public class MoneyStorage : Storage, ISaveLoaded
+{
+    [SerializeField] private string _flatKey;
+
+    private MoneyData _moneyData;
+    public string FlatKey => _flatKey;
+
+    private void Awake()
+    {
+        if (SaveLoad.HasKey(_flatKey))
+            SaveLoad.Load<MoneyData>(_flatKey, Onloaded);
+
+        ValueAdded += ValueChanged;
+        ValueSpended += ValueChanged;
+    }
+
+    private void ValueChanged(int _)
+    {
+        _moneyData.Money = Smthng;
+        SaveLoad.Save<MoneyData>(_flatKey, _moneyData);
+    }
+
+    private void Onloaded(MoneyData data)
+    {
+        _moneyData = data;
+        EarnSmt(data.Money);
+    }
+
+    private void OnDestroy()
+    {
+        ValueAdded -= ValueChanged;
+        ValueSpended -= ValueChanged;
+    }
+
     public override void EarnSmt(int val)
     {
         base.EarnSmt(val);
@@ -11,4 +52,5 @@ public class MoneyStorage : Storage
         };
         AnalyticsService.Instance.RecordEvent(updateCurrencyEvent);
     }
+
 }

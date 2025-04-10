@@ -1,6 +1,15 @@
+using System;
+using DefaultNamespace.SaveLoadSystem;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class Bank : MonoBehaviour
+[Serializable]
+public class BankSaveData
+{
+    public int ObjectPrice;
+}
+
+public class Bank : MonoBehaviour, ISaveLoaded
 {
     [SerializeField] Storage Coins;
     [Header("Object")]
@@ -16,7 +25,11 @@ public class Bank : MonoBehaviour
     [SerializeField] int DownChance;
     [SerializeField] int AddMin;
     [SerializeField] int AddMax;
+    [SerializeField] string _flatKey;
 
+    private BankSaveData _saved;
+    public string FlatKey => _flatKey;
+    
     private float _maxPriceTimer;
     private bool _maxPriceAd;
 
@@ -24,7 +37,29 @@ public class Bank : MonoBehaviour
 
     public void SetMaxPrice()
         => _maxPriceAd = true;
-    
+
+    private void Awake()
+    {
+        if (SaveLoad.HasKey(_flatKey))
+            SaveLoad.Load<BankSaveData>(_flatKey, OnLoaded);
+        else
+        {
+            _saved = new BankSaveData();
+            SetAveragePrice();
+        }
+    }
+
+    private void OnLoaded(BankSaveData data)
+    {
+        _saved = data;
+        ObjectPrice = _saved.ObjectPrice;
+    }
+
+    private void SetAveragePrice()
+    {
+        ObjectPrice = MinPrice + (MaxPrice - MinPrice) / 2;
+    }
+
     private void Update()
     {
         if (_maxPriceAd)
@@ -35,6 +70,7 @@ public class Bank : MonoBehaviour
             {
                 _maxPriceTimer = 0f;
                 _maxPriceAd = false;
+                SetAveragePrice();
             }
 
             return;
@@ -109,4 +145,5 @@ public class Bank : MonoBehaviour
             ObjectPrice = MaxPrice;
         }
     }
+
 }

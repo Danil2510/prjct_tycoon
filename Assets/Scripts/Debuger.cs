@@ -9,6 +9,7 @@ public class Debuger : MonoBehaviour
     [SerializeField] GameObject g;
     bool lick = false;
 
+#if UNITY_EDITOR
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -29,4 +30,5 @@ public class Debuger : MonoBehaviour
         {
         }
     }
+#endif
 }

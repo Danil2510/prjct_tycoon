@@ -9,8 +9,12 @@ namespace DefaultNamespace
 {
     public class Bootstrapper : MonoBehaviour
     {
-        private void Awake() 
-            => StartCoroutine(InitializeServices());
+        private void Awake()
+        {
+            StartCoroutine(InitializeServices());
+
+            Debug.unityLogger.logEnabled = false;
+        }
 
         private IEnumerator InitializeServices()
         {
