@@ -1,4 +1,7 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using DefaultNamespace;
 using DefaultNamespace.SaveLoadSystem;
 using UnityEngine;
 
@@ -21,8 +24,11 @@ public class Upgrader : MonoBehaviour, ISaveLoaded
 
     public string FlatKey => _flatKey;
 
-    private void Awake()
+    private IEnumerator Start()
     {
+        while (GlobalGameState.IsInitialized == false)
+            yield return null;
+        
         _upgradesCounter = new UpgradesCounter();
         
         if (SaveLoad.HasKey(_flatKey))
@@ -45,7 +51,7 @@ public class Upgrader : MonoBehaviour, ISaveLoaded
 
     public void AddLevel()
     {
-        AddLevelWithoutSave();
+        AddLevelWithoutSave(); 
         _upgradesCounter.UpgradesOpen = levelOfUpgrade;
         SaveLoad.Save<UpgradesCounter>(_flatKey, _upgradesCounter);
     }

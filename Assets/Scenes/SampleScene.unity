@@ -12219,7 +12219,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1546350015}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -14479,7 +14480,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8591368543227358663, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8764038781410034924, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     - {fileID: 8936363876306504739, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
@@ -36296,6 +36298,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2177203384074406252, guid: 2a146c9b308bc7a47bac0dc6428c5ad4, type: 3}
   m_PrefabInstance: {fileID: 149026689}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &149047044 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 690766025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &149421865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42954,6 +42961,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200039424}
   m_Mesh: {fileID: 5241329052946375955, guid: 07c9cc6ea2bb06b418033d90989c6632, type: 3}
+--- !u!1 &200045014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 562264961}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &200333219
 GameObject:
   m_ObjectHideFlags: 0
@@ -43017,12 +43029,18 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 2000
     ToActive:
     - {fileID: 1965262072}
     - {fileID: 1447833429}
     ToDisable:
     - {fileID: 1498305607}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 1500
     ToActive:
     - {fileID: 650977123}
@@ -43031,6 +43049,33 @@ MonoBehaviour:
     - {fileID: 1577575542}
     ToDisable:
     - {fileID: 1447833429}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 186840266}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1837785491}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 5000
     ToActive:
     - {fileID: 253257199}
@@ -43038,6 +43083,57 @@ MonoBehaviour:
     - {fileID: 949741756}
     ToDisable:
     - {fileID: 1577575542}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1706668895}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 981262460}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 949741756}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 581057841}
+          m_TargetAssemblyTypeName: PlayWaitPlay, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: 2_room_1_0
   storage: {fileID: 1323190014}
 --- !u!1 &200994587
@@ -47094,7 +47190,6 @@ GameObject:
   - component: {fileID: 230764278}
   - component: {fileID: 230764277}
   - component: {fileID: 230764276}
-  - component: {fileID: 230764275}
   m_Layer: 0
   m_Name: AddCaper (1)
   m_TagString: Untagged
@@ -47117,69 +47212,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 327037131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &230764275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 230764273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3669fe8d64e166a4fa3fd81b30c3e41a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _actionCompleted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 445081889}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1881902936}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 900450540}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 230764273}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &230764276
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48450,7 +48482,6 @@ GameObject:
   - component: {fileID: 238360036}
   - component: {fileID: 238360035}
   - component: {fileID: 238360034}
-  - component: {fileID: 238360033}
   m_Layer: 0
   m_Name: AddCaper (1)
   m_TagString: Untagged
@@ -48473,69 +48504,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 327037131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &238360033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238360031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3669fe8d64e166a4fa3fd81b30c3e41a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _actionCompleted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 445081889}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1881902936}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 900450540}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 238360031}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &238360034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48760,23 +48728,35 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 4000000
     ToActive:
     - {fileID: 2066972475}
     - {fileID: 534780841}
     ToDisable:
     - {fileID: 962753187}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 12000000
     ToActive:
     - {fileID: 353687058}
     - {fileID: 770407600}
     ToDisable:
     - {fileID: 534780841}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 20000000
     ToActive:
     - {fileID: 570781754}
     ToDisable:
     - {fileID: 770407600}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   _flatKey: 3_room_2_2
   storage: {fileID: 1323190014}
 --- !u!1 &238913812
@@ -52066,7 +52046,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8591368543227358663, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8764038781410034924, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     - {fileID: 8936363876306504739, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
@@ -53200,7 +53181,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1199343762}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -55386,7 +55368,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starter
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2408509154610081381, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
+    - {fileID: 5717768014928685333, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1516894814500559005, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     - {fileID: 2185842694659338054, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
@@ -57905,7 +57889,9 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5717768014928685333, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
+    - {fileID: 2408509154610081381, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1516894814500559005, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     - {fileID: 2185842694659338054, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
@@ -72371,6 +72357,9 @@ MonoBehaviour:
     - {fileID: 0}
     ToDisable:
     - {fileID: 0}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 60000
     ToActive:
     - {fileID: 279164343}
@@ -72379,6 +72368,57 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 525971405}
     - {fileID: 1004874831}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 445081889}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1881902936}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 900450540}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 230764273}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 300000
     ToActive:
     - {fileID: 435390668}
@@ -72387,6 +72427,57 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 279164343}
     - {fileID: 1000808827}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 445081889}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1881902936}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 900450540}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1525093165}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 1000000
     ToActive:
     - {fileID: 205814636}
@@ -72395,13 +72486,79 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 435390668}
     - {fileID: 1318292845}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 445081889}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1881902936}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 900450540}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 238360031}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 5000000
     ToActive:
     - {fileID: 981782529}
     - {fileID: 494666006}
     ToDisable:
     - {fileID: 205814636}
-  _flatKey: 
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1413064047}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  _flatKey: decor_level_1
   storage: {fileID: 1323190014}
 --- !u!1 &328322521
 GameObject:
@@ -74964,6 +75121,7 @@ MonoBehaviour:
   Smthng: 0
   Name: "\u0411\u043E\u043B\u0442\u044B"
   MaxCapacity: 20
+  _flatKey: 
 --- !u!4 &344274273
 Transform:
   m_ObjectHideFlags: 0
@@ -75638,17 +75796,74 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 5
     ToActive:
     - {fileID: 5145229381708582105}
     - {fileID: 5593894}
     ToDisable:
     - {fileID: 1991774629}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6522105003339738859}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 142006045}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 20
     ToActive:
     - {fileID: 5145229381712882389}
     ToDisable:
     - {fileID: 5593894}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6522105003339738859}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1285148338}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: room_1_2
   storage: {fileID: 1323190014}
 --- !u!1 &349874158
@@ -77475,7 +77690,6 @@ GameObject:
   - component: {fileID: 361075992}
   - component: {fileID: 361075991}
   - component: {fileID: 361075990}
-  - component: {fileID: 361075989}
   m_Layer: 0
   m_Name: AddCaper (1)
   m_TagString: Untagged
@@ -77498,69 +77712,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 415131862}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &361075989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361075987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3669fe8d64e166a4fa3fd81b30c3e41a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _actionCompleted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1188801514}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1731586434}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1271434898}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 361075987}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &361075990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80151,7 +80302,7 @@ Transform:
   - {fileID: 700209801}
   - {fileID: 2034485863}
   - {fileID: 408358783}
-  - {fileID: 421630252}
+  - {fileID: 2132128708}
   m_Father: {fileID: 363494805}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &379949875
@@ -85979,6 +86130,9 @@ MonoBehaviour:
     - {fileID: 0}
     ToDisable:
     - {fileID: 0}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 6000000
     ToActive:
     - {fileID: 1704281478}
@@ -85987,6 +86141,57 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 1190282487}
     - {fileID: 1575466401}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1188801516}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1731586436}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1271434900}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 361075987}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 30000000
     ToActive:
     - {fileID: 767053368}
@@ -85995,6 +86200,57 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 1704281478}
     - {fileID: 2011223515}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1188801516}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1731586436}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1271434900}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2036590283}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 1000000
     ToActive:
     - {fileID: 885416541}
@@ -86003,12 +86259,66 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 767053368}
     - {fileID: 26512023}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1188801516}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1731586436}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1271434900}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1859076888}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 5000000
     ToActive:
     - {fileID: 1512856375}
     ToDisable:
     - {fileID: 1110986749}
-  _flatKey: 
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
+  _flatKey: decor_level_2
   storage: {fileID: 1323190014}
 --- !u!1001 &415890562
 PrefabInstance:
@@ -86571,68 +86881,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2384456921428575086, guid: acb0777e819dbb943aa7b079ef362479, type: 3}
   m_PrefabInstance: {fileID: 421423194}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &421630251
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 379949874}
-    m_Modifications:
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.31150058
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.020000488
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5472355373457910832, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_Name
-      value: exchange
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
---- !u!4 &421630252 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-  m_PrefabInstance: {fileID: 421630251}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &421702559
 GameObject:
@@ -90422,6 +90670,7 @@ MonoBehaviour:
   Smthng: 0
   Name: "\u041F\u0440\u0443\u0436\u0438\u043D\u044B"
   MaxCapacity: 20
+  _flatKey: 
 --- !u!4 &439808406
 Transform:
   m_ObjectHideFlags: 0
@@ -91523,6 +91772,7 @@ MonoBehaviour:
   Smthng: 0
   Name: "\u0411\u043E\u043B\u0442\u044B"
   MaxCapacity: 20
+  _flatKey: 
 --- !u!1001 &445134996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94352,6 +94602,100 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1826729459}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &460415337
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 514309518}
+    m_Modifications:
+    - target: {fileID: -8712837393049526085, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.6885004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.019997597
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8509679237527173221, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a882ccf5ca116df4681dd313cbb9b5e4, type: 2}
+    - target: {fileID: -1576641229737207221, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a882ccf5ca116df4681dd313cbb9b5e4, type: 2}
+    - target: {fileID: 919132149155446097, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_Name
+      value: exchange
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737350920995179923, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e1f40b75babf5274ead0e3d340ffcba3, type: 2}
+    - target: {fileID: 2048297029969766482, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a882ccf5ca116df4681dd313cbb9b5e4, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+--- !u!4 &460415338 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+  m_PrefabInstance: {fileID: 460415337}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &460808157
 GameObject:
   m_ObjectHideFlags: 0
@@ -94927,6 +95271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5717768014928685333, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
+    - {fileID: 2408509154610081381, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 2185842694659338054, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     - {fileID: 1516894814500559005, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
@@ -101690,7 +102035,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8591368543227358663, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8936363876306504739, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     - {fileID: 8764038781410034924, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
@@ -102195,7 +102541,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1400089430}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -103431,7 +103778,7 @@ Transform:
   - {fileID: 1668982539}
   - {fileID: 374232775}
   - {fileID: 1660931123}
-  - {fileID: 1516775476}
+  - {fileID: 460415338}
   m_Father: {fileID: 107073420}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &514309519
@@ -105225,7 +105572,9 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2408509154610081381, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
+    - {fileID: 5717768014928685333, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1516894814500559005, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     - {fileID: 2185842694659338054, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
@@ -105506,17 +105855,74 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 50000
     ToActive:
     - {fileID: 2075602202}
     - {fileID: 401936667}
     ToDisable:
     - {fileID: 460345497}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1620780600}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2083296494}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 100000
     ToActive:
     - {fileID: 689374230}
     ToDisable:
     - {fileID: 401936667}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1620780600}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 299803925}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: 2_room_2_2
   storage: {fileID: 1323190014}
 --- !u!4 &526334866
@@ -106192,23 +106598,35 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 40000
     ToActive:
     - {fileID: 641242981}
     - {fileID: 74703402}
     ToDisable:
     - {fileID: 470707151}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 120000
     ToActive:
     - {fileID: 523556033}
     - {fileID: 1373190042}
     ToDisable:
     - {fileID: 74703402}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 200000
     ToActive:
     - {fileID: 1681577389}
     ToDisable:
     - {fileID: 1373190042}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   _flatKey: 2_room_2_1
   storage: {fileID: 1323190014}
 --- !u!4 &531792397
@@ -112054,17 +112472,74 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 500000
     ToActive:
     - {fileID: 1834469426}
     - {fileID: 379099182}
     ToDisable:
     - {fileID: 431730966}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1546350015}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2031016782}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 2000000
     ToActive:
     - {fileID: 1053955650}
     ToDisable:
     - {fileID: 1834469426}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1546350015}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 919521844}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: 3_room_1_1
   storage: {fileID: 1323190014}
 --- !u!4 &536331059
@@ -120570,17 +121045,74 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 50000000
     ToActive:
     - {fileID: 851584185}
     - {fileID: 754662906}
     ToDisable:
     - {fileID: 1852326037}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1400089430}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1250248831}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 60000000
     ToActive:
     - {fileID: 1481615949}
     ToDisable:
     - {fileID: 851584185}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1400089430}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 779783423}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: 3_room_3_1
   storage: {fileID: 1323190014}
 --- !u!1 &562184817
@@ -120674,7 +121206,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1199343762}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -130429,18 +130962,51 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 200000
     ToActive:
     - {fileID: 1366142057}
     - {fileID: 1985767653}
     ToDisable:
     - {fileID: 841700526}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 150000
     ToActive:
     - {fileID: 2087523475}
     - {fileID: 406207532}
     ToDisable:
     - {fileID: 1985767653}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1546350015}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1362254877}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 500000
     ToActive:
     - {fileID: 2074923069}
@@ -130449,6 +131015,9 @@ MonoBehaviour:
     - {fileID: 1807510997}
     ToDisable:
     - {fileID: 406207532}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 5000000
     ToActive:
     - {fileID: 1660931122}
@@ -130457,6 +131026,45 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 1807510997}
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1252761332}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 262712696}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 581057841}
+          m_TargetAssemblyTypeName: PlayWaitPlay, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: 3_room_1_0
   storage: {fileID: 1323190014}
 --- !u!4 &622403680
@@ -132089,7 +132697,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8591368543227358663, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8936363876306504739, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     - {fileID: 8764038781410034924, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
@@ -136000,7 +136609,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1546350015}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -136371,17 +136981,74 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 500000
     ToActive:
     - {fileID: 1769812226}
     - {fileID: 667985382}
     ToDisable:
     - {fileID: 1617191751}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1967334119}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2047124664}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 600000
     ToActive:
     - {fileID: 2082621154}
     ToDisable:
     - {fileID: 667985382}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1967334119}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 524813807}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: 2_room_3_2
   storage: {fileID: 1323190014}
 --- !u!4 &657916365
@@ -137486,6 +138153,7 @@ MonoBehaviour:
   DownChance: 60
   AddMin: 100
   AddMax: 1000
+  _flatKey: 
 --- !u!1 &664261261
 GameObject:
   m_ObjectHideFlags: 0
@@ -138638,6 +139306,7 @@ MonoBehaviour:
   DownChance: 60
   AddMin: 1
   AddMax: 2
+  _flatKey: 
 --- !u!4 &670451291
 Transform:
   m_ObjectHideFlags: 0
@@ -156108,7 +156777,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8591368543227358663, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8764038781410034924, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     - {fileID: 8936363876306504739, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
@@ -161362,18 +162032,51 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 50
     ToActive:
     - {fileID: 308303512}
     - {fileID: 78556387}
     ToDisable:
     - {fileID: 182699916}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 50
     ToActive:
     - {fileID: 368914179}
     - {fileID: 929653587}
     ToDisable:
     - {fileID: 78556387}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6985353809311138420}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 871879927}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 300
     ToActive:
     - {fileID: 896601202}
@@ -161382,6 +162085,9 @@ MonoBehaviour:
     - {fileID: 554147368}
     ToDisable:
     - {fileID: 929653587}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 5000
     ToActive:
     - {fileID: 1660931122}
@@ -161390,6 +162096,57 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 554147368}
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1025043788}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 400218725}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 933829666}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 581057841}
+          m_TargetAssemblyTypeName: PlayWaitPlay, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: room_2_0
   storage: {fileID: 1323190014}
 --- !u!4 &747423895
@@ -163720,23 +164477,35 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 50
     ToActive:
     - {fileID: 712695446}
     - {fileID: 158674206}
     ToDisable:
     - {fileID: 1911680299}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 80
     ToActive:
     - {fileID: 1145008298}
     - {fileID: 856850233}
     ToDisable:
     - {fileID: 158674206}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 120
     ToActive:
     - {fileID: 1378120632}
     ToDisable:
     - {fileID: 856850233}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   _flatKey: room_1_1
   storage: {fileID: 1323190014}
 --- !u!1 &759914504
@@ -163962,7 +164731,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starter
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5717768014928685333, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
+    - {fileID: 2408509154610081381, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1516894814500559005, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     - {fileID: 2185842694659338054, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
@@ -166434,6 +167205,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6863721902008999755, guid: 32da9c203750e7a418801007e29daa71, type: 3}
   m_PrefabInstance: {fileID: 779620894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &779783423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 2089084048}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &780022263
 GameObject:
@@ -172083,12 +172859,42 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 0
     ToActive:
     - {fileID: 1048690924}
     - {fileID: 7500893869945780342}
     ToDisable:
     - {fileID: 1685835554}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6522105003339738859}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 3062904688706130299}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 0
     ToActive:
     - {fileID: 4371505379282857145}
@@ -172097,6 +172903,9 @@ MonoBehaviour:
     - {fileID: 7500893869467578927}
     ToDisable:
     - {fileID: 7500893869945780342}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 500
     ToActive:
     - {fileID: 374232774}
@@ -172104,6 +172913,57 @@ MonoBehaviour:
     - {fileID: 1713724098}
     ToDisable:
     - {fileID: 7500893869467578927}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1772011007}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 599406194}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1713724098}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 581057841}
+          m_TargetAssemblyTypeName: PlayWaitPlay, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: room_1_0
   storage: {fileID: 1323190014}
 --- !u!1 &783151083
@@ -175059,17 +175919,74 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 5000
     ToActive:
     - {fileID: 493541413878973036}
     - {fileID: 564122341}
     ToDisable:
     - {fileID: 487019538}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6985353810179948606}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2001288574}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 6000
     ToActive:
     - {fileID: 908501862}
     ToDisable:
     - {fileID: 564122341}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6985353810179948606}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1716000049}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: room_3_2
   storage: {fileID: 1323190014}
 --- !u!1001 &799943164
@@ -175842,6 +176759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5717768014928685333, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
+    - {fileID: 2408509154610081381, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 2185842694659338054, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     - {fileID: 1516894814500559005, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
@@ -176336,12 +177254,18 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 400
     ToActive:
     - {fileID: 1344744392}
     - {fileID: 773578355}
     ToDisable:
     - {fileID: 806893192}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 400
     ToActive:
     - {fileID: 1559471794}
@@ -176349,6 +177273,33 @@ MonoBehaviour:
     - {fileID: 799637489}
     ToDisable:
     - {fileID: 773578355}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6985353810179948606}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2128508885}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: room_3_0
   storage: {fileID: 1323190014}
 --- !u!4 &806563670
@@ -182095,23 +183046,35 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 1000
     ToActive:
     - {fileID: 115150}
     - {fileID: 1351882030}
     ToDisable:
     - {fileID: 1946325426}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 6000
     ToActive:
     - {fileID: 809649988}
     - {fileID: 191699489}
     ToDisable:
     - {fileID: 1351882030}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 8000
     ToActive:
     - {fileID: 1899715711}
     ToDisable:
     - {fileID: 191699489}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   _flatKey: room_3_1
   storage: {fileID: 1323190014}
 --- !u!1 &836651060
@@ -185707,7 +186670,7 @@ Transform:
   - {fileID: 1923551457}
   - {fileID: 253257200}
   - {fileID: 428692438}
-  - {fileID: 1099519135}
+  - {fileID: 1430030811}
   m_Father: {fileID: 1998772529}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &855904585
@@ -188309,6 +189272,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871482759}
   m_Mesh: {fileID: 2612281267301622864, guid: 07c9cc6ea2bb06b418033d90989c6632, type: 3}
+--- !u!1 &871879927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 1712743446}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &872321008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -193460,6 +194428,7 @@ MonoBehaviour:
   Smthng: 0
   Name: "\u041F\u0440\u0443\u0436\u0438\u043D\u044B"
   MaxCapacity: 20
+  _flatKey: 
 --- !u!1 &901277449
 GameObject:
   m_ObjectHideFlags: 0
@@ -193910,13 +194879,43 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 1000
     ToActive:
     - {fileID: 984905868}
     - {fileID: 924417066}
     ToDisable:
     - {fileID: 899108398}
-  _flatKey: 
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 673296735}
+          m_TargetAssemblyTypeName: FirstPersonMovement, Assembly-CSharp
+          m_MethodName: AddSpeed
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 20
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 984905868}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 20
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  _flatKey: speed_upgrades
   storage: {fileID: 1323190014}
 --- !u!4 &903720920
 Transform:
@@ -196350,6 +197349,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e748f5b4b7a2e3c4bbcdbdc61bfd2ba7, type: 3}
   m_PrefabInstance: {fileID: 918021183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &919521844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 55917660}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &920630098
 GameObject:
@@ -203094,7 +204098,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8591368543227358663, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8764038781410034924, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     - {fileID: 8936363876306504739, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
@@ -205393,7 +206398,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8591368543227358663, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8764038781410034924, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     - {fileID: 8936363876306504739, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
@@ -208430,17 +209436,26 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 500
     ToActive:
     - {fileID: 1421939228}
     - {fileID: 493541414754861094}
     ToDisable:
     - {fileID: 1799875548}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 1000
     ToActive:
     - {fileID: 1764158960}
     ToDisable:
     - {fileID: 1421939228}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   _flatKey: room_2_1
   storage: {fileID: 1323190014}
 --- !u!1 &968335192
@@ -212008,7 +213023,9 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2408509154610081381, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
+    - {fileID: 5717768014928685333, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1516894814500559005, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     - {fileID: 2185842694659338054, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
@@ -212834,12 +213851,18 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 400000
     ToActive:
     - {fileID: 130207060}
     - {fileID: 1450617659}
     ToDisable:
     - {fileID: 189518156}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 400000
     ToActive:
     - {fileID: 1227102124}
@@ -212848,6 +213871,33 @@ MonoBehaviour:
     - {fileID: 233981143}
     ToDisable:
     - {fileID: 1450617659}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1199343762}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1020113137}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 6000000
     ToActive:
     - {fileID: 1660931122}
@@ -212856,6 +213906,45 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 233981143}
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 527903343}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 714761432}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 581057841}
+          m_TargetAssemblyTypeName: PlayWaitPlay, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: 3_room_2_0
   storage: {fileID: 1323190014}
 --- !u!1 &991177025
@@ -220297,7 +221386,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starter
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2408509154610081381, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
+    - {fileID: 5717768014928685333, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1516894814500559005, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     - {fileID: 2185842694659338054, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
@@ -220707,6 +221798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e55b812e854b8aabbe1449ff9ee1f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _curtain: {fileID: 1962857530}
 --- !u!1001 &1012314485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -221988,6 +223080,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4077757413802093886, guid: b4060be17bad50b4e82671536066ac4e, type: 3}
   m_PrefabInstance: {fileID: 1019725171}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1020113137 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 269644116}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1022641807
 PrefabInstance:
@@ -227948,6 +229045,7 @@ MonoBehaviour:
   DownChance: 70
   AddMin: 500
   AddMax: 3000
+  _flatKey: 
 --- !u!1 &1059700432
 GameObject:
   m_ObjectHideFlags: 0
@@ -229435,12 +230533,18 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 400000
     ToActive:
     - {fileID: 1864139670}
     - {fileID: 297112659}
     ToDisable:
     - {fileID: 846330168}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 450000
     ToActive:
     - {fileID: 1252278778}
@@ -229448,6 +230552,33 @@ MonoBehaviour:
     - {fileID: 1733624367}
     ToDisable:
     - {fileID: 297112659}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1400089430}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 149047044}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: 3_room_3_0
   storage: {fileID: 1323190014}
 --- !u!1 &1069962537
@@ -229505,6 +230636,7 @@ MonoBehaviour:
   DownChance: 60
   AddMin: 1
   AddMax: 10
+  _flatKey: 
 --- !u!1 &1070014785
 GameObject:
   m_ObjectHideFlags: 0
@@ -230672,23 +231804,35 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 500000
     ToActive:
     - {fileID: 1864583068}
     - {fileID: 2106974521}
     ToDisable:
     - {fileID: 46279902}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 800000
     ToActive:
     - {fileID: 687483522}
     - {fileID: 1309029833}
     ToDisable:
     - {fileID: 2106974521}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 1200000
     ToActive:
     - {fileID: 1241691532}
     ToDisable:
     - {fileID: 1309029833}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   _flatKey: 3_room_1_2
   storage: {fileID: 1323190014}
 --- !u!4 &1079709033
@@ -234136,7 +235280,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6985353810179948606}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -234233,68 +235378,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099064652}
   m_Mesh: {fileID: 2612281267301622864, guid: 07c9cc6ea2bb06b418033d90989c6632, type: 3}
---- !u!1001 &1099519134
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 855904584}
-    m_Modifications:
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.31150058
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.020000488
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5472355373457910832, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_Name
-      value: exchange
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
---- !u!4 &1099519135 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-  m_PrefabInstance: {fileID: 1099519134}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1099591460
 GameObject:
   m_ObjectHideFlags: 0
@@ -239518,6 +240601,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8288660147037750595, guid: 51c132677074581448e7bbab76c023a4, type: 3}
   m_PrefabInstance: {fileID: 1131567620}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1132288808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 2095937854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1132549414
 GameObject:
   m_ObjectHideFlags: 0
@@ -243314,6 +244402,7 @@ MonoBehaviour:
   DownChance: 60
   AddMin: 100
   AddMax: 200
+  _flatKey: 
 --- !u!1001 &1156151192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -253688,6 +254777,7 @@ MonoBehaviour:
   Smthng: 0
   Name: "\u0411\u043E\u043B\u0442\u044B"
   MaxCapacity: 20
+  _flatKey: 
 --- !u!1001 &1188836113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -253969,17 +255059,74 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 5000
     ToActive:
     - {fileID: 952191920}
     - {fileID: 344847121}
     ToDisable:
     - {fileID: 2100830614}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 186840266}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1217852816}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 20000
     ToActive:
     - {fileID: 2067555474}
     ToDisable:
     - {fileID: 344847121}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 186840266}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1762296358}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: 2_room_1_2
   storage: {fileID: 1323190014}
 --- !u!4 &1189887093
@@ -258366,6 +259513,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215724603}
   m_Mesh: {fileID: 2283144990041844366, guid: 07c9cc6ea2bb06b418033d90989c6632, type: 3}
+--- !u!1 &1216113957 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 1548890723}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1216481816
 GameObject:
   m_ObjectHideFlags: 0
@@ -263684,6 +264836,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.001, y: 0.0035, z: 0.003}
   m_Center: {x: 0, y: -0.0005, z: 0.0017}
+--- !u!1 &1250248831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 506553989}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1250306363
 GameObject:
   m_ObjectHideFlags: 0
@@ -267920,6 +269077,7 @@ MonoBehaviour:
   Smthng: 0
   Name: "\u041F\u0440\u0443\u0436\u0438\u043D\u044B"
   MaxCapacity: 20
+  _flatKey: 
 --- !u!1 &1272241697
 GameObject:
   m_ObjectHideFlags: 0
@@ -276387,6 +277545,7 @@ MonoBehaviour:
   DownChance: 60
   AddMin: 10000
   AddMax: 20000
+  _flatKey: 
 --- !u!1001 &1325680912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -292198,6 +293357,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8288660147037750595, guid: 51c132677074581448e7bbab76c023a4, type: 3}
   m_PrefabInstance: {fileID: 1361664645}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1362254877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 654700062}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1363102224
 GameObject:
   m_ObjectHideFlags: 0
@@ -293875,7 +295039,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -296116,23 +297281,35 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 5000
     ToActive:
     - {fileID: 1715625970}
     - {fileID: 358833623}
     ToDisable:
     - {fileID: 579923060}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 8000
     ToActive:
     - {fileID: 1756801295}
     - {fileID: 1363984647}
     ToDisable:
     - {fileID: 358833623}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 12000
     ToActive:
     - {fileID: 1182848386}
     ToDisable:
     - {fileID: 1363984647}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   _flatKey: 2_room_1_1
   storage: {fileID: 1323190014}
 --- !u!4 &1385400491
@@ -303844,23 +305021,35 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 100000
     ToActive:
     - {fileID: 1793047062}
     - {fileID: 1870044402}
     ToDisable:
     - {fileID: 230185964}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 600000
     ToActive:
     - {fileID: 254957500}
     - {fileID: 809128648}
     ToDisable:
     - {fileID: 1870044402}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 800000
     ToActive:
     - {fileID: 1677711612}
     ToDisable:
     - {fileID: 809128648}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   _flatKey: 2_room_3_1
   storage: {fileID: 1323190014}
 --- !u!4 &1407548087
@@ -311866,6 +313055,100 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2102128032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1430030810
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 855904584}
+    m_Modifications:
+    - target: {fileID: -8712837393049526085, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.6885004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.019997597
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8509679237527173221, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a882ccf5ca116df4681dd313cbb9b5e4, type: 2}
+    - target: {fileID: -1576641229737207221, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a882ccf5ca116df4681dd313cbb9b5e4, type: 2}
+    - target: {fileID: 919132149155446097, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_Name
+      value: exchange (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737350920995179923, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e1f40b75babf5274ead0e3d340ffcba3, type: 2}
+    - target: {fileID: 2048297029969766482, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a882ccf5ca116df4681dd313cbb9b5e4, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+--- !u!4 &1430030811 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+  m_PrefabInstance: {fileID: 1430030810}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1431533919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -323784,11 +325067,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2177203384074406252, guid: 2a146c9b308bc7a47bac0dc6428c5ad4, type: 3}
   m_PrefabInstance: {fileID: 1516025062}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1516775476 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-  m_PrefabInstance: {fileID: 8454028265073458478}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1517176378
 GameObject:
   m_ObjectHideFlags: 0
@@ -324875,7 +326153,6 @@ GameObject:
   - component: {fileID: 1525093170}
   - component: {fileID: 1525093169}
   - component: {fileID: 1525093168}
-  - component: {fileID: 1525093167}
   m_Layer: 0
   m_Name: AddCaper (1)
   m_TagString: Untagged
@@ -324898,69 +326175,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 327037131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1525093167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525093165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3669fe8d64e166a4fa3fd81b30c3e41a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _actionCompleted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 445081889}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1881902936}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 900450540}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1525093165}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &1525093168
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -327132,12 +328346,18 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 4000
     ToActive:
     - {fileID: 1960773381}
     - {fileID: 393820073}
     ToDisable:
     - {fileID: 201391788}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 4000
     ToActive:
     - {fileID: 230980436}
@@ -327146,6 +328366,33 @@ MonoBehaviour:
     - {fileID: 751778629}
     ToDisable:
     - {fileID: 393820073}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1620780600}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1216113957}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 6000
     ToActive:
     - {fileID: 428692437}
@@ -327153,6 +328400,57 @@ MonoBehaviour:
     - {fileID: 65508498}
     ToDisable:
     - {fileID: 751778629}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1318383277}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1087951494}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 65508498}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 581057841}
+          m_TargetAssemblyTypeName: PlayWaitPlay, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: 2_room_2_0
   storage: {fileID: 1323190014}
 --- !u!1 &1535628228
@@ -327860,7 +329158,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1199343762}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -330049,7 +331348,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -339208,6 +340508,7 @@ MonoBehaviour:
   Smthng: 0
   Name: "\u0428\u0435\u0441\u0442\u0435\u0440\u0451\u043D\u043A\u0438"
   MaxCapacity: 20
+  _flatKey: 
 --- !u!1 &1578803613
 GameObject:
   m_ObjectHideFlags: 0
@@ -340401,7 +341702,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1962857531}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1584755364
@@ -343242,6 +344544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5717768014928685333, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
+    - {fileID: 2408509154610081381, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 2185842694659338054, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     - {fileID: 1516894814500559005, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
@@ -346958,6 +348261,7 @@ MonoBehaviour:
   DownChance: 70
   AddMin: 50000
   AddMax: 300000
+  _flatKey: 
 --- !u!1 &1624373890
 GameObject:
   m_ObjectHideFlags: 0
@@ -356875,17 +358179,74 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 5000000
     ToActive:
     - {fileID: 494404357}
     - {fileID: 893346546}
     ToDisable:
     - {fileID: 811339498}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1199343762}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1898438158}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 10000000
     ToActive:
     - {fileID: 2065121704}
     ToDisable:
     - {fileID: 494404357}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1199343762}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 200045014}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: 3_room_2_1
   storage: {fileID: 1323190014}
 --- !u!1001 &1694926079
@@ -359676,7 +361037,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starter
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2408509154610081381, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1516894814500559005, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     - {fileID: 2185842694659338054, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
@@ -359876,7 +361238,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6985353809311138420}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -360458,7 +361821,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8591368543227358663, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8764038781410034924, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
     - {fileID: 8936363876306504739, guid: f0da9c4a11fa21a4abff37108455df65, type: 3}
@@ -360942,6 +362306,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1862480107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1716000049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 1098476283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1716515796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -363642,6 +365011,7 @@ MonoBehaviour:
   Smthng: 0
   Name: "\u0428\u0435\u0441\u0442\u0435\u0440\u0451\u043D\u043A\u0438"
   MaxCapacity: 20
+  _flatKey: 
 --- !u!1 &1732136332
 GameObject:
   m_ObjectHideFlags: 0
@@ -364160,23 +365530,35 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 10000000
     ToActive:
     - {fileID: 2132208828}
     - {fileID: 700901699}
     ToDisable:
     - {fileID: 1233665501}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 60000000
     ToActive:
     - {fileID: 224643456}
     - {fileID: 672093392}
     ToDisable:
     - {fileID: 700901699}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 80000000
     ToActive:
     - {fileID: 1848288674}
     ToDisable:
     - {fileID: 672093392}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   _flatKey: 3_room_3_2
   storage: {fileID: 1323190014}
 --- !u!1001 &1734128468
@@ -368056,6 +369438,9 @@ MonoBehaviour:
     - {fileID: 0}
     ToDisable:
     - {fileID: 0}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 600
     ToActive:
     - {fileID: 1813579281}
@@ -368064,6 +369449,57 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 108625935}
     - {fileID: 48342855}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 344274272}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1578364698}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 439808405}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1603203327}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 3000
     ToActive:
     - {fileID: 416329666}
@@ -368072,6 +369508,57 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 1813579281}
     - {fileID: 2107952101}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 344274272}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1578364698}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 439808405}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 462560142}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 10000
     ToActive:
     - {fileID: 585443813}
@@ -368080,13 +369567,79 @@ MonoBehaviour:
     ToDisable:
     - {fileID: 416329666}
     - {fileID: 671794912}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 344274272}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1578364698}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 439808405}
+          m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
+          m_MethodName: NewMaxCup
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 803305971}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - cost: 50000
     ToActive:
     - {fileID: 300553649}
     - {fileID: 953140860}
     ToDisable:
     - {fileID: 1454517792}
-  _flatKey: 
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 802667499}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  _flatKey: decor_level_0
   storage: {fileID: 1323190014}
 --- !u!1 &1755704553
 GameObject:
@@ -372080,12 +373633,18 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 4000
     ToActive:
     - {fileID: 1725167064}
     - {fileID: 1086848816}
     ToDisable:
     - {fileID: 462252476}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 4000
     ToActive:
     - {fileID: 1152018988}
@@ -372093,6 +373652,33 @@ MonoBehaviour:
     - {fileID: 657916363}
     ToDisable:
     - {fileID: 1086848816}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1967334119}
+          m_TargetAssemblyTypeName: ConveyorController, Assembly-CSharp
+          m_MethodName: AddFactory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1132288808}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   _flatKey: 2_room_3_0
   storage: {fileID: 1323190014}
 --- !u!1 &1780712446
@@ -379976,6 +381562,11 @@ Transform:
   - {fileID: 275737667}
   m_Father: {fileID: 908874846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1837785491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 1372624735}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1837852280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -381421,6 +383012,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2177203384074406252, guid: 2a146c9b308bc7a47bac0dc6428c5ad4, type: 3}
   m_PrefabInstance: {fileID: 1848367236}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1850405132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1850405133}
+  - component: {fileID: 1850405135}
+  - component: {fileID: 1850405134}
+  m_Layer: 5
+  m_Name: Curtain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1850405133
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850405132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1962857531}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1850405134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850405132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1850405135
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850405132}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1850809727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -383572,7 +385238,6 @@ GameObject:
   - component: {fileID: 1859076893}
   - component: {fileID: 1859076892}
   - component: {fileID: 1859076891}
-  - component: {fileID: 1859076890}
   m_Layer: 0
   m_Name: AddCaper
   m_TagString: Untagged
@@ -383595,69 +385260,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 415131862}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1859076890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859076888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3669fe8d64e166a4fa3fd81b30c3e41a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _actionCompleted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1188801514}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1731586434}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1271434898}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1859076888}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &1859076891
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -386959,6 +388561,7 @@ MonoBehaviour:
   DownChance: 70
   AddMin: 5
   AddMax: 30
+  _flatKey: 
 --- !u!4 &1878645803
 Transform:
   m_ObjectHideFlags: 0
@@ -387467,6 +389070,7 @@ MonoBehaviour:
   Smthng: 0
   Name: "\u0428\u0435\u0441\u0442\u0435\u0440\u0451\u043D\u043A\u0438"
   MaxCapacity: 20
+  _flatKey: 
 --- !u!1 &1882164392
 GameObject:
   m_ObjectHideFlags: 0
@@ -394236,7 +395840,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1546350015}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -394836,6 +396441,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5218490868908381063, guid: f1e69f1f42cb70541b3ece7b13eddc20, type: 3}
   m_PrefabInstance: {fileID: 1898366123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1898438158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 1538303890}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1898669598
 PrefabInstance:
@@ -405206,6 +406816,108 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2627267041741828297, guid: 0213579cb66ac16439fa941d70598827, type: 3}
   m_PrefabInstance: {fileID: 1962264664}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1962857530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1962857531}
+  - component: {fileID: 1962857534}
+  - component: {fileID: 1962857533}
+  - component: {fileID: 1962857532}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1962857531
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962857530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1850405133}
+  m_Father: {fileID: 1584524772}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1962857532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962857530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1962857533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962857530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0.5
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1962857534
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962857530}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1963415419
 GameObject:
   m_ObjectHideFlags: 0
@@ -416560,6 +418272,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2177203384074406252, guid: 2a146c9b308bc7a47bac0dc6428c5ad4, type: 3}
   m_PrefabInstance: {fileID: 2000851055}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2001288574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 2140499902}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2001550033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -418991,23 +420708,35 @@ MonoBehaviour:
     - {fileID: 1147129348}
     ToDisable:
     - {fileID: 1147129348}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 400
     ToActive:
     - {fileID: 1101572852}
     - {fileID: 75440267}
     ToDisable:
     - {fileID: 525292617}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 1200
     ToActive:
     - {fileID: 355194957}
     - {fileID: 478027955}
     ToDisable:
     - {fileID: 75440267}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   - cost: 2000
     ToActive:
     - {fileID: 494941255}
     ToDisable:
     - {fileID: 478027955}
+    _toDo:
+      m_PersistentCalls:
+        m_Calls: []
   _flatKey: room_2_2
   storage: {fileID: 1323190014}
 --- !u!1 &2014216552
@@ -421551,6 +423280,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2031016782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 1894002242}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2032143055
 GameObject:
   m_ObjectHideFlags: 0
@@ -422160,7 +423894,6 @@ GameObject:
   - component: {fileID: 2036590288}
   - component: {fileID: 2036590287}
   - component: {fileID: 2036590286}
-  - component: {fileID: 2036590285}
   m_Layer: 0
   m_Name: AddCaper
   m_TagString: Untagged
@@ -422183,69 +423916,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 415131862}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2036590285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036590283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3669fe8d64e166a4fa3fd81b30c3e41a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _actionCompleted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1188801514}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1731586434}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1271434898}
-        m_TargetAssemblyTypeName: ObjectStorage, Assembly-CSharp
-        m_MethodName: NewMaxCup
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2036590283}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &2036590286
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -428928,6 +430598,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6644582757778525913, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
   m_PrefabInstance: {fileID: 2046450707}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2047124664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7500893870373486755, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
+  m_PrefabInstance: {fileID: 282777160}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2047805112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -435095,7 +436770,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1400089430}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -435693,7 +437369,9 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2408509154610081381, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
+    - {fileID: 5717768014928685333, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1516894814500559005, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
     - {fileID: 2185842694659338054, guid: 68dea425e61c9f04ea56576e3204fd7d, type: 3}
@@ -436097,7 +437775,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -439607,7 +441286,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6985353810179948606}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -440272,6 +441952,7 @@ MonoBehaviour:
   DownChance: 60
   AddMin: 10000
   AddMax: 100000
+  _flatKey: 
 --- !u!1001 &2126399834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -440723,6 +442404,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128079416}
   m_Mesh: {fileID: 2612281267301622864, guid: 07c9cc6ea2bb06b418033d90989c6632, type: 3}
+--- !u!1 &2128508885 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 2119573862}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2128834775
 GameObject:
   m_ObjectHideFlags: 0
@@ -441098,6 +442784,100 @@ Transform:
   - {fileID: 487904337}
   m_Father: {fileID: 1149475075}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2132128707
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 379949874}
+    m_Modifications:
+    - target: {fileID: -8712837393049526085, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.6885004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.019997597
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8509679237527173221, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a882ccf5ca116df4681dd313cbb9b5e4, type: 2}
+    - target: {fileID: -1576641229737207221, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a882ccf5ca116df4681dd313cbb9b5e4, type: 2}
+    - target: {fileID: 919132149155446097, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: m_Name
+      value: exchange (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737350920995179923, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e1f40b75babf5274ead0e3d340ffcba3, type: 2}
+    - target: {fileID: 2048297029969766482, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a882ccf5ca116df4681dd313cbb9b5e4, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+--- !u!4 &2132128708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: db2fd3ba650824a44a253015f352b8c7, type: 3}
+  m_PrefabInstance: {fileID: 2132128707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2132208828
 GameObject:
   m_ObjectHideFlags: 0
@@ -442205,7 +443985,8 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6985353810179948606}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
@@ -451525,7 +453306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: PlaYPart
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -451535,12 +453316,18 @@ PrefabInstance:
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3464178133160445344, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_RemovedGameObjects:
     - {fileID: 84018274384522684, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+--- !u!1 &3062904688706130299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146969560050550686, guid: 93b003773bf1e124daa4912b29e95195, type: 3}
+  m_PrefabInstance: {fileID: 3062904688706130298}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3068186025676676513
 GameObject:
   m_ObjectHideFlags: 0
@@ -454927,7 +456714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4377625450129031270
 Transform:
   m_ObjectHideFlags: 0
@@ -464768,63 +466555,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1001 &8454028265073458478
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 514309518}
-    m_Modifications:
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.31150058
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.020000488
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4664153182100321930, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5472355373457910832, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
-      propertyPath: m_Name
-      value: exchange
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3147f0492f769f445b0ebf78966a8b04, type: 3}
 --- !u!4 &8455180494460033020
 Transform:
   m_ObjectHideFlags: 0
@@ -466584,7 +468314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5879213617813976154, guid: fc1c4af4065ce4c4bb64e199688392f0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7062555466011702030, guid: fc1c4af4065ce4c4bb64e199688392f0, type: 3}
       propertyPath: _actionCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -466593,7 +468323,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8546202946772025649, guid: fc1c4af4065ce4c4bb64e199688392f0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fc1c4af4065ce4c4bb64e199688392f0, type: 3}
 --- !u!23 &9090506040994457444
 MeshRenderer:

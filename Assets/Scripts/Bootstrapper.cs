@@ -7,10 +7,19 @@ using UnityEngine.Analytics;
 
 namespace DefaultNamespace
 {
+    public static class GlobalGameState
+    {
+        public static bool IsInitialized = false;
+    }
+    
+    
     public class Bootstrapper : MonoBehaviour
     {
+        [SerializeField] private GameObject _curtain;
+        
         private void Awake()
         {
+            _curtain.SetActive(true);
             StartCoroutine(InitializeServices());
 
             Debug.unityLogger.logEnabled = false;
@@ -24,6 +33,9 @@ namespace DefaultNamespace
                 yield return null;
             
             AnalyticsService.Instance.StartDataCollection();
+
+            GlobalGameState.IsInitialized = true;
+            _curtain.SetActive(false);
         }
     }
 }

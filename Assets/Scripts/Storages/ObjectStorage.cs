@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using DefaultNamespace;
 using DefaultNamespace.SaveLoadSystem;
 using UnityEngine;
 
@@ -18,8 +20,11 @@ public class ObjectStorage : Storage, ISaveLoaded
     
     public string FlatKey => _flatKey;
     
-    private void Awake()
+    private IEnumerator Start()
     {
+        while (GlobalGameState.IsInitialized == false)
+            yield return null;
+        
         if (SaveLoad.HasKey(_flatKey))
             SaveLoad.Load<ObjectStorageSaved>(_flatKey, OnLoaded);
         else

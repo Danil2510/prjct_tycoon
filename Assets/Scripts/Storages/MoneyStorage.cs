@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using DefaultNamespace;
 using DefaultNamespace.Analytics;
 using DefaultNamespace.SaveLoadSystem;
 using Unity.Services.Analytics;
@@ -17,10 +19,15 @@ public class MoneyStorage : Storage, ISaveLoaded
     private MoneyData _moneyData;
     public string FlatKey => _flatKey;
 
-    private void Awake()
+    private IEnumerator Start()
     {
+        while (GlobalGameState.IsInitialized == false)
+            yield return null;
+        
         if (SaveLoad.HasKey(_flatKey))
             SaveLoad.Load<MoneyData>(_flatKey, Onloaded);
+        else
+            _moneyData = new MoneyData();
 
         ValueAdded += ValueChanged;
         ValueSpended += ValueChanged;

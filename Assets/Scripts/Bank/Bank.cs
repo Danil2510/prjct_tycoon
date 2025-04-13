@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using DefaultNamespace;
 using DefaultNamespace.SaveLoadSystem;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -38,8 +40,11 @@ public class Bank : MonoBehaviour, ISaveLoaded
     public void SetMaxPrice()
         => _maxPriceAd = true;
 
-    private void Awake()
+    private IEnumerator Start()
     {
+        while (GlobalGameState.IsInitialized == false)
+            yield return null;
+        
         if (SaveLoad.HasKey(_flatKey))
             SaveLoad.Load<BankSaveData>(_flatKey, OnLoaded);
         else
@@ -57,11 +62,15 @@ public class Bank : MonoBehaviour, ISaveLoaded
 
     private void SetAveragePrice()
     {
-        ObjectPrice = MinPrice + (MaxPrice - MinPrice) / 2;
+        ObjectPrice = Mathf.Clamp(MinPrice + (MaxPrice - MinPrice) / 2, MinPrice, MaxPrice);
+        _saved.ObjectPrice = ObjectPrice;
     }
 
     private void Update()
     {
+        if (GlobalGameState.IsInitialized == false)
+            return;
+        
         if (_maxPriceAd)
         {
             ObjectPrice = MaxPrice;
@@ -108,14 +117,12 @@ public class Bank : MonoBehaviour, ISaveLoaded
             if (Random.Range(0, 100) <= UpChanse)
             {
                 ObjectPrice += (i =Random.Range(AddMin, AddMax));
-                if (ObjectPrice > MaxPrice)
-                    { ObjectPrice = MaxPrice; }
+                ObjectPrice = Mathf.Clamp(ObjectPrice, MinPrice, MaxPrice);
             }
             else
             {
                 ObjectPrice -= (i =Random.Range(AddMin, AddMax));
-                if (ObjectPrice < MinPrice)
-                    { ObjectPrice = MinPrice; }
+                ObjectPrice = Mathf.Clamp(ObjectPrice, MinPrice, MaxPrice);
                 polarity = false;
             }
         }
@@ -135,6 +142,8 @@ public class Bank : MonoBehaviour, ISaveLoaded
                 polarity = true;
             }
         }
+        
+        _saved.ObjectPrice = ObjectPrice;
     }
 
     public void HigherPriceByHalf()

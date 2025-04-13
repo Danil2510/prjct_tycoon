@@ -8,7 +8,7 @@ public class ConveyorController : MonoBehaviour
     [SerializeField] private ConveyorMove[] moves;
     [SerializeField] private float movespeed;
     [Header("Factory")]
-    [SerializeField] private int howManyFactories = 0;
+    [SerializeField] private int howManyFactories = 3;
     private Factory[] _Factories;
     [SerializeField] private int Price;
     [SerializeField] private float TimeBFrNext;
