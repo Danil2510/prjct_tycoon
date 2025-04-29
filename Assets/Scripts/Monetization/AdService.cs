@@ -18,6 +18,10 @@ namespace DefaultNamespace.Monetization
         [SerializeField] private TMP_Text _timerText;
         [SerializeField] private Image _progressBar;
         
+        [SerializeField] private GameObject _faderDelayer;
+        [SerializeField] private TMP_Text _delayerText;
+        private readonly WaitForSeconds _waiter = new WaitForSeconds(1f);
+
         private float _timer;
         private float _timerCooldown;
 
@@ -25,13 +29,13 @@ namespace DefaultNamespace.Monetization
         {
             if (_timer > 0.1f || _timerCooldown > 0.1f)
                 return;
-            
-            
-            YG2.RewardedAdvShow(_rewardedID, SetMaxPrices);
+
+            StartCoroutine(AdDelay());
         }
 
         private void SetMaxPrices()
         {
+            AudioListener.volume = 1f;
             _floorBanks.ToList().ForEach(x => x.SetMaxPrice());
             StartCoroutine(AdRewardedTimer());
         }
@@ -76,6 +80,24 @@ namespace DefaultNamespace.Monetization
             _progressBar.transform.parent.gameObject.SetActive(false);
             _thanksMessage.SetActive(false);
             _infoMessage.SetActive(true);
+        }
+        
+        private IEnumerator AdDelay()
+        {
+            int time = 3;
+            _faderDelayer.SetActive(true);
+            _delayerText.text = "Реклама начнется через: 3";
+            AudioListener.volume = 0f;
+            while (time > 0)
+            {
+                yield return _waiter;
+                time--;
+                _delayerText.text = $"Реклама начнется через: {time}";
+
+            }
+        
+            _faderDelayer.SetActive(false);
+            YG2.RewardedAdvShow(_rewardedID, SetMaxPrices);
         }
     }
 }

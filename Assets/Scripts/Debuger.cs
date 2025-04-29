@@ -28,6 +28,7 @@ public class Debuger : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
+            storage[0].EarnSmt(5000000);
         }
     }
 #endif
